@@ -1,0 +1,2 @@
+# Suggestion-Module-Using-Python-Script
+This module consist of Server Code that can handle multiple customers(clients) at the same time for the Shopping Mall based Model.The Customers will be provided with the Interface with which they can select multiple operations and also choose the shop they want to go and by using the current data if any (or will be created) they will be provided with suggestion regarding the next shop they should visit.
