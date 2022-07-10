@@ -1,0 +1,271 @@
+\hypertarget{classproject01_1_1user}{}\doxysection{project01.\+user Class Reference}
+\label{classproject01_1_1user}\index{project01.user@{project01.user}}
+
+
+Class named User consist of all the Methods that are required for the handling of Clients and all the data calculations required for the suggestions that will be provided to the customer.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproject01_1_1user_a5baa92e9558b4adf60f5f1d42b46b81e}\label{classproject01_1_1user_a5baa92e9558b4adf60f5f1d42b46b81e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, username)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a9ccd2a89ae70d3b9855ef02f77e936ae}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Run Method handle or provide with the Operation List that can be performed in order to choose the shop customer would like to go next or taking suggestions and also see their current path of shops they visited. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_ab9885e1afafcab9f71431087fb4fb00f}{create\+\_\+data}} (self)
+\begin{DoxyCompactList}\small\item\em Create Data generates random data that will be further useful for the suggestion. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a92bd0aa460cb603b5564e463b2f0ddd9}{new\+\_\+user}} (self, user\+\_\+name)
+\begin{DoxyCompactList}\small\item\em New User creates the New User and Save its Name in New User Data\+Base. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a5014b1842512578f1fe606cda6f5abf1}{append\+\_\+list}} (self)
+\begin{DoxyCompactList}\small\item\em Append List let User to choose the next shop that user want to visit and than once User has visited all the shop once it stores it into the Data\+Base it also let user know that same shop donot get repeated. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a8b64e93a68326f0330f0df2f622494e2}{suggestion}} (self)
+\begin{DoxyCompactList}\small\item\em Suggestion uses the current user data and compares it within the Data\+Base and it return suggestion list on the basis of patter matching. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a0d947416a75a5b8fc198991efdaf8601}{row\+\_\+count}} (self)
+\begin{DoxyCompactList}\small\item\em Row Count returns the total number of users present in the Data\+Base. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a3db81de9600f5d80fa19a656c5fb4d7b}{data\+\_\+match}} (self, customer\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Data Match does pattern matching with the exisiting Data Base in order to find the next shop user should visit. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a62a01e51c363cc2379b291cb8b44d1f4}{print\+\_\+list}} (self)
+\begin{DoxyCompactList}\small\item\em Print\+\_\+list prints the current list of the shops that user has visited. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_adefed0bc8ed4fa7b6a854cfc6981faf5}{client\+\_\+handler}} (self, connection)
+\begin{DoxyCompactList}\small\item\em client\+\_\+handler informs the client that is now connected and furhter start the run process. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_abc563eecc7ba6dbde981e0b875eaa8e1}{accept\+\_\+connections}} (self, Server\+Socket)
+\begin{DoxyCompactList}\small\item\em accept\+\_\+connection accepts the connection that is requested by every new client. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_aa0ad42acee8d141fedd8ec542d460962}{start\+\_\+server}} (self, host, port)
+\begin{DoxyCompactList}\small\item\em start\+\_\+server bind the port on which the communication between server and client will take place. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a906283f7d819d39029bc014562955ce1}{send\+\_\+data}} (self, message)
+\begin{DoxyCompactList}\small\item\em send\+\_\+data will send the data on the connected client. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classproject01_1_1user_a50c7b254fb82988f131f51a32a9d55b0}{receive\+\_\+data}} (self)
+\begin{DoxyCompactList}\small\item\em receive\+\_\+data receives the data that is being send by client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproject01_1_1user_aea7b98914c9bd9987193fee1e83c2feb}\label{classproject01_1_1user_aea7b98914c9bd9987193fee1e83c2feb}} 
+{\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class named User consist of all the Methods that are required for the handling of Clients and all the data calculations required for the suggestions that will be provided to the customer. 
+
+More details. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classproject01_1_1user_abc563eecc7ba6dbde981e0b875eaa8e1}\label{classproject01_1_1user_abc563eecc7ba6dbde981e0b875eaa8e1}} 
+\index{project01.user@{project01.user}!accept\_connections@{accept\_connections}}
+\index{accept\_connections@{accept\_connections}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{accept\_connections()}{accept\_connections()}}
+{\footnotesize\ttfamily def project01.\+user.\+accept\+\_\+connections (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Server\+Socket }\end{DoxyParamCaption})}
+
+
+
+accept\+\_\+connection accepts the connection that is requested by every new client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em Server\+Socket} & The Socket on which request will be initiated \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a5014b1842512578f1fe606cda6f5abf1}\label{classproject01_1_1user_a5014b1842512578f1fe606cda6f5abf1}} 
+\index{project01.user@{project01.user}!append\_list@{append\_list}}
+\index{append\_list@{append\_list}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{append\_list()}{append\_list()}}
+{\footnotesize\ttfamily def project01.\+user.\+append\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Append List let User to choose the next shop that user want to visit and than once User has visited all the shop once it stores it into the Data\+Base it also let user know that same shop donot get repeated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_adefed0bc8ed4fa7b6a854cfc6981faf5}\label{classproject01_1_1user_adefed0bc8ed4fa7b6a854cfc6981faf5}} 
+\index{project01.user@{project01.user}!client\_handler@{client\_handler}}
+\index{client\_handler@{client\_handler}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{client\_handler()}{client\_handler()}}
+{\footnotesize\ttfamily def project01.\+user.\+client\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{connection }\end{DoxyParamCaption})}
+
+
+
+client\+\_\+handler informs the client that is now connected and furhter start the run process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em connection} & The Socket Connection \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_ab9885e1afafcab9f71431087fb4fb00f}\label{classproject01_1_1user_ab9885e1afafcab9f71431087fb4fb00f}} 
+\index{project01.user@{project01.user}!create\_data@{create\_data}}
+\index{create\_data@{create\_data}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{create\_data()}{create\_data()}}
+{\footnotesize\ttfamily def project01.\+user.\+create\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Create Data generates random data that will be further useful for the suggestion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a3db81de9600f5d80fa19a656c5fb4d7b}\label{classproject01_1_1user_a3db81de9600f5d80fa19a656c5fb4d7b}} 
+\index{project01.user@{project01.user}!data\_match@{data\_match}}
+\index{data\_match@{data\_match}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{data\_match()}{data\_match()}}
+{\footnotesize\ttfamily def project01.\+user.\+data\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{customer\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Data Match does pattern matching with the exisiting Data Base in order to find the next shop user should visit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em customer\+\_\+data} & The List of the Exisiting Customer Data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a92bd0aa460cb603b5564e463b2f0ddd9}\label{classproject01_1_1user_a92bd0aa460cb603b5564e463b2f0ddd9}} 
+\index{project01.user@{project01.user}!new\_user@{new\_user}}
+\index{new\_user@{new\_user}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{new\_user()}{new\_user()}}
+{\footnotesize\ttfamily def project01.\+user.\+new\+\_\+user (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+New User creates the New User and Save its Name in New User Data\+Base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em user\+\_\+name} & The Name Entered by User \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a62a01e51c363cc2379b291cb8b44d1f4}\label{classproject01_1_1user_a62a01e51c363cc2379b291cb8b44d1f4}} 
+\index{project01.user@{project01.user}!print\_list@{print\_list}}
+\index{print\_list@{print\_list}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{print\_list()}{print\_list()}}
+{\footnotesize\ttfamily def project01.\+user.\+print\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Print\+\_\+list prints the current list of the shops that user has visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a50c7b254fb82988f131f51a32a9d55b0}\label{classproject01_1_1user_a50c7b254fb82988f131f51a32a9d55b0}} 
+\index{project01.user@{project01.user}!receive\_data@{receive\_data}}
+\index{receive\_data@{receive\_data}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{receive\_data()}{receive\_data()}}
+{\footnotesize\ttfamily def project01.\+user.\+receive\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+receive\+\_\+data receives the data that is being send by client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a0d947416a75a5b8fc198991efdaf8601}\label{classproject01_1_1user_a0d947416a75a5b8fc198991efdaf8601}} 
+\index{project01.user@{project01.user}!row\_count@{row\_count}}
+\index{row\_count@{row\_count}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{row\_count()}{row\_count()}}
+{\footnotesize\ttfamily def project01.\+user.\+row\+\_\+count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Row Count returns the total number of users present in the Data\+Base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a9ccd2a89ae70d3b9855ef02f77e936ae}\label{classproject01_1_1user_a9ccd2a89ae70d3b9855ef02f77e936ae}} 
+\index{project01.user@{project01.user}!run@{run}}
+\index{run@{run}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def project01.\+user.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Run Method handle or provide with the Operation List that can be performed in order to choose the shop customer would like to go next or taking suggestions and also see their current path of shops they visited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a906283f7d819d39029bc014562955ce1}\label{classproject01_1_1user_a906283f7d819d39029bc014562955ce1}} 
+\index{project01.user@{project01.user}!send\_data@{send\_data}}
+\index{send\_data@{send\_data}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{send\_data()}{send\_data()}}
+{\footnotesize\ttfamily def project01.\+user.\+send\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+
+
+send\+\_\+data will send the data on the connected client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em message} & The data to be sent to client. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_aa0ad42acee8d141fedd8ec542d460962}\label{classproject01_1_1user_aa0ad42acee8d141fedd8ec542d460962}} 
+\index{project01.user@{project01.user}!start\_server@{start\_server}}
+\index{start\_server@{start\_server}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{start\_server()}{start\_server()}}
+{\footnotesize\ttfamily def project01.\+user.\+start\+\_\+server (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{host,  }\item[{}]{port }\end{DoxyParamCaption})}
+
+
+
+start\+\_\+server bind the port on which the communication between server and client will take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+{\em host} & The Host ID. \\
+\hline
+{\em port} & The Port on which communication will take place. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classproject01_1_1user_a8b64e93a68326f0330f0df2f622494e2}\label{classproject01_1_1user_a8b64e93a68326f0330f0df2f622494e2}} 
+\index{project01.user@{project01.user}!suggestion@{suggestion}}
+\index{suggestion@{suggestion}!project01.user@{project01.user}}
+\doxysubsubsection{\texorpdfstring{suggestion()}{suggestion()}}
+{\footnotesize\ttfamily def project01.\+user.\+suggestion (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Suggestion uses the current user data and compares it within the Data\+Base and it return suggestion list on the basis of patter matching. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The object pointer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project01.\+py\end{DoxyCompactItemize}
